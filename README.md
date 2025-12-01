@@ -1,31 +1,31 @@
-# Adaptive Grid and Media
+# Adaptive Grid and Media ✨
 
-Responsive one-page layout with a hero block, burger navigation, and a tile grid for consulting services. Built as a clean HTML/CSS page that scales down nicely on mobile.
+Лендинг про консалтинг с адаптивной сеткой карточек и бургер-меню. Чистый HTML/CSS, который аккуратно ужимается под мобильные. 🚀
 
-## Live demo
-- GitHub Pages: https://kosayk06.github.io/Adaptive-Grid-and-media/
+## Демо
+- GitHub Pages: https://kosayk06.github.io/Adaptive-Grid-and-media/ 🔗
 
-## Highlights
-- Hero section with headline and supporting text.
-- Burger nav on small screens that locks body scroll when open.
-- Six background-image tiles that reflow via media queries.
-- Plain stack: semantic HTML, modern CSS, and a lightweight JS hook if you need behavior.
+## Что внутри
+- 🧭 Хедер с логотипом и бургер-меню, которое блокирует скролл при открытии.
+- 🦾 Герой-блок с заголовком и описанием.
+- 🎨 Сетка из 6 карточек с фоновыми иллюстрациями, перестраивается через media queries.
+- 🧼 Минимум зависимостей: семантичный HTML + современный CSS, JS-хук под доп. поведение.
 
-## Tech stack
+## Стек
 - HTML5
-- CSS3 (media queries for responsiveness)
+- CSS3 (адаптив через media queries)
 - JavaScript (src/js/script.js)
 
-## Run locally
+## Как запустить локально
 ```bash
 git clone https://github.com/kosayk06/Adaptive-Grid-and-media.git
 cd Adaptive-Grid-and-media
-# open index.html in your browser (double click or use Live Server)
+# открыть index.html в браузере (двойной клик или Live Server)
 ```
 
-## Project structure
-- `index.html` — page markup.
-- `src/css/reset.css` — base reset.
-- `src/css/style.css` — main styling and responsive rules.
-- `src/js/script.js` — scripts (extend as needed).
-- `assets/img/` — logos and tile backgrounds.
+## Структура
+- `index.html` — разметка страницы.
+- `src/css/reset.css` — сброс базовых стилей.
+- `src/css/style.css` — основная стилизация и адаптив.
+- `src/js/script.js` — скрипты (расширяйте при необходимости).
+- `assets/img/` — логотип и фоновые изображения карточек.

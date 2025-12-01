@@ -1,0 +1,335 @@
+body {
+    background: white;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.main {
+    padding: 40px 60px 60px;
+    max-width: 1140px;
+    margin: 0 auto;
+    background: white;
+    gap: 110px;
+}
+.About {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    align-items: center;
+}
+.About h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 48px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 60px auto 0;
+    word-wrap: break-word;
+    white-space: normal;
+}
+.About p {
+    width: 639px;
+    text-align: center;
+    font-size: 18px;
+    margin: 30px auto 0;
+    line-height: 2.2;
+    white-space: normal;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 35px;
+    max-width: 1140px;
+    margin: 0 auto;
+    background: white;
+}
+.navigate {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 12px;
+}
+.logo {
+    margin: 12px;
+}
+.logo img {
+    width: 64px;
+    height: 32px;
+}
+.navigate ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    
+}
+.nav-element {
+    color: black;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+/* стили для бургер */
+
+label {
+    display: none;
+}
+#burger {
+    display: none;
+}
+@media (max-width: 810px ) {
+    label {
+        position: relative;
+        display: block;
+        height: 25px;
+        width: 30px;
+    }
+    label::after, label::before, label span {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        transition: .3s;
+    }
+    label::before {
+        content: "";
+        top: 0;
+    }
+    label::after {
+        content: "";
+        bottom: 0;
+    }
+    label span {
+        top: 11px;
+    }
+    #burger:checked ~ label::after {
+        transform: rotate(45deg);
+        bottom: 10px;
+    }
+    #burger:checked ~ label::before {
+        transform: rotate(-45deg);
+        top: 12px;
+    }
+    #burger:checked ~ label span {
+        transform: rotate(-45deg);
+        top: 12px;
+    }
+    .nav-list {
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.950);
+        padding-top: 160px;
+        height: 100vh;
+        transition: .5s;
+    }
+    #burger:checked ~ .nav-list {
+        top: 80px;
+    }
+    .nav-element {
+        font-size: 24px;
+        color: white;
+    }
+}
+
+body:has(#burger:checked) {
+    overflow: hidden;
+}
+
+/* ---------- */
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(3, 366px);
+    grid-auto-rows: 346px;
+    gap: 20px;
+    margin: 60px auto;
+    width: 100%;
+    justify-content: center;
+}
+.tile {
+    display: flex;
+    padding: 12px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tile-consult {
+    background: black;
+    background-image: url(../../assets/img/Consult.png);
+}
+.tile-strategy {
+    background: black;
+    background-image: url(../../assets/img/Strategy.png);
+}
+.tile-investment {
+    background: black;
+    background-image: url(../../assets/img/Investment.png);
+}
+.tile-marketing {
+    background: black;
+    background-image: url(../../assets/img/Marketing.png);
+}   
+.tile-startups {
+    background: black;
+    background-image: url(../../assets/img/Startups.png);
+}
+.tile-anticrisis {
+    background: black;
+    background-image: url(../../assets/img/Anticrisis.png);
+}
+
+
+@media (max-width: 1231px ) {
+    .tiles {
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        grid-auto-rows: 346px;
+        gap: 20px;
+        margin: 60px auto;
+        width: 100%;
+        justify-content: center;
+    }
+    .tile {
+        display: flex;
+        padding: 12px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+@media (max-width: 1061px ) {
+    .tiles {
+        display: grid;
+        grid-template-columns: repeat(3, 270px);
+        grid-auto-rows: 300px;
+        gap: 20px;
+        margin: 60px auto;
+        width: 100%;
+        justify-content: center;
+    }
+    .tile {
+        display: flex;
+        padding: 12px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+@media (max-width: 970px ) {
+    .tiles {
+        display: grid;
+        grid-template-columns: repeat(3, 250px);
+        grid-auto-rows: 280px;
+        gap: 20px;
+        margin: 60px auto;
+        width: 100%;
+        justify-content: center;
+    }
+    .tile {
+        display: flex;
+        padding: 12px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+@media (max-width: 911px ) {
+    .tiles {
+        display: grid;
+        grid-template-columns: repeat(3, 220px);
+        grid-auto-rows: 240px;
+        gap: 20px;
+        margin: 60px auto;
+        width: 100%;
+        justify-content: center;
+    }
+    .tile {
+        display: flex;
+        padding: 12px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+@media (max-width: 821px ) {
+    .tiles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 240px);
+        grid-auto-rows: 220px;
+        gap: 20px;
+        margin: 60px auto;
+        width: 100%;
+        justify-content: center;
+    }
+    .tile {
+        display: flex;
+        padding: 12px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+@media (max-width: 1025px) {
+    .About h1 {
+        font-size: 48px;
+        margin: 50px auto 0;
+    }
+    .About p {
+        width: 90%;
+        max-width: 640px;
+        font-size: 17px;
+        line-height: 1.9;
+    }
+}
+
+@media (max-width: 805px) {
+    .About h1 {
+        font-size: 36px;
+        margin: 44px auto 0;
+    }
+    .About p {
+        width: 95%;
+        max-width: 560px;
+        font-size: 16.5px;
+        line-height: 1.8;
+    }
+}
+
+@media (max-width: 640px) {
+    .About h1 {
+        font-size: 32px;
+        margin: 38px auto 0;
+    }
+    .About p {
+        width: 100%;
+        max-width: 520px;
+        font-size: 16px;
+        line-height: 1.7;
+    }
+    .About p br {
+        display: none;
+    }
+}
+
+@media (max-width: 440px) {
+    .About h1 {
+        font-size: 28px;
+        margin: 32px auto 0;
+    }
+    .About p {
+        width: 100%;
+        max-width: 420px;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+}
+
+/* Тут делаю бургер */
